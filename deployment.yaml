@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seleniumdemoapp
+  name: kubedemoapp
   labels:
-    app: seleniumdemoapp
+    app: kubedemoapp
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: seleniumdemoapp
+      app: kubedemoapp
   template:
     metadata:
       labels:
-        app:
+        app: kubedemoapp
     spec:
       containers:
-        - name: seleniumdemoapp
-          image: sowmya959/sample:seleniumtestimage
+        - name: kubedemoapp
+          image: sowmya959/sample1:kubeimage1
           ports:
             - containerPort: 5000

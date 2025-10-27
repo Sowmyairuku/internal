@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kubedemoapp-service
+  name: seleniumdemoapp-service
 spec:
   selector:
-    app: kubedemoapp
+    app: seleniumdemoapp
   ports:
     - protocol: TCP
       port: 5000

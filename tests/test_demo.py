@@ -55,7 +55,7 @@ def test_valid_input(setup_teardown):
     current_url = driver.current_url
     assert "/submit" in current_url
     body_text = driver.find_element(By.TAG_NAME, "body").text
-    assert "Hi, sowmya," in body_text
+    assert "Hi sowmya," in body_text
 
 
 
